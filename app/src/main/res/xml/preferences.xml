@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="pref_account"
+        android:dialogTitle="Account"
+        android:entries="@array/pref_account_type"
+        android:entryValues="@array/pref_account_type"
+        android:summary="Select account type"
+        android:title="Account"></ListPreference>
+    <ListPreference
+        android:key="pref_dept"
+        android:dialogTitle="Department"
+        android:entries="@array/pref_department"
+        android:entryValues="@array/pref_department"
+        android:summary="Select your department"
+        android:title="Department"></ListPreference>
+
+</PreferenceScreen>

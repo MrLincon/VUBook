@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">VU Book</string>
+
+    <string name="open">Navigation Drawer Opened</string>
+    <string name="close">Navigation Drawer Closed</string>
+
+    <string-array name="department">
+        <item>CSE</item>
+        <item>EEE</item>
+        <item>BBA</item>
+        <item>ENG</item>
+        <item>LAW</item>
+    </string-array>
+
+    <string-array name="semester">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+        <item>9th</item>
+        <item>10th</item>
+        <item>11th</item>
+        <item>12th</item>
+    </string-array>
+
+    <string-array name="section">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="General">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/profile"
+                    android:title="Profile"
+                    android:icon="@drawable/ic_account"
+                    android:iconTint="@color/colorPrimary"></item>
+                <item
+                    android:id="@+id/officeStaff"
+                    android:title="Office staff"
+                    android:icon="@drawable/ic_account"
+                    android:iconTint="@color/colorPrimary"></item>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Settings">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/settings"
+                    android:title="Settings"
+                    android:icon="@drawable/ic_settings"
+                    android:iconTint="@color/colorPrimary"></item>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="More">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/feedback"
+                    android:title="Feedback"
+                    android:icon="@drawable/ic_feedback"
+                    android:iconTint="@color/colorPrimary"></item>
+                <item
+                    android:id="@+id/about"
+                    android:title="About"
+                    android:icon="@drawable/ic_about"
+                    android:iconTint="@color/colorPrimary"></item>
+                <item
+                    android:id="@+id/logout"
+                    android:title="Log out"
+                    android:icon="@drawable/ic_exit"
+                    android:iconTint="@color/colorPrimary"></item>
+            </group>
+        </menu>
+    </item>
+
+</menu>
+
+<!--<item-->
+<!--android:id="@+id/cr"-->
+<!--android:title="CR"-->
+<!--android:icon="@drawable/ic_account"-->
+<!--android:iconTint="@color/colorPrimary"></item>-->
+<!--<item-->
+<!--android:id="@+id/student"-->
+<!--android:title="Student"-->
+<!--android:icon="@drawable/ic_account"-->
+<!--android:iconTint="@color/colorPrimary"></item>-->
+<!--<item-->
+<!--android:id="@+id/office_staff"-->
+<!--android:title="Office staff"-->
+<!--android:icon="@drawable/ic_account"-->
+<!--android:iconTint="@color/colorPrimary"></item>-->

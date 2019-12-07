@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "296084634178",
+    "firebase_url": "https://vu-book.firebaseio.com",
+    "project_id": "vu-book",
+    "storage_bucket": "vu-book.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296084634178:android:347adcce9c66b5de22cbdb",
+        "android_client_info": {
+          "package_name": "com.example.vubook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296084634178-drvq6ollc3qipb9q2rluirjlirf1uulq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vubook",
+            "certificate_hash": "1eb4310822c28024127b3834f68d6f31d323b078"
+          }
+        },
+        {
+          "client_id": "296084634178-1dq49ajstok85tbhn53l8tbg4gomd986.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADAr9I7TE3VgwPvX8_7vupLc4wRhrEmgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296084634178-1dq49ajstok85tbhn53l8tbg4gomd986.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pref_account_type">
+        <item>Teacher</item>
+        <item>CR</item>
+        <item>Student</item>
+        <item>Office staff</item>
+    </string-array>
+
+    <string-array name="pref_department">
+        <item>CSE</item>
+        <item>EEE</item>
+        <item>BBS</item>
+        <item>ENG</item>
+        <item>LAW</item>
+    </string-array>
+
+</resources>

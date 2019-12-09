@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.preference.ListPreference;
 import android.preference.PreferenceManager;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -26,6 +27,8 @@ import com.example.vubook.Tab_Layout_Files.ViewPagerAdapter;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.Collections;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -74,8 +77,9 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(viewPagerAdapter);
-    }
 
+//        ListPreference accountType = (ListPreference) findPreference("");
+    }
 
     public void NavigationItems() {
 
@@ -85,16 +89,10 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (menuItem.getItemId()) {
                     case R.id.profile:
-//                        Intent teacher = new Intent(MainActivity.this, TeacherProfileActivity.class);
-//                        startActivity(teacher);
 
-                        openProfile();
+                            openProfile();
 
                         break;
-//                    case R.id.cr:
-//                        Intent cr = new Intent(MainActivity.this, CRProfileActivity.class);
-//                        startActivity(cr);
-//                        break;
                     case R.id.settings:
                         Intent settings = new Intent(MainActivity.this, SettingsActivity.class);
                         startActivity(settings);
@@ -110,8 +108,6 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, "There is no e-mail clint installed!", Toast.LENGTH_SHORT).show();
 
                         }
-//                        Intent feedback = new Intent(HomeActivity.this,FeedbackActivity.class);
-//                        startActivity(feedback);
                         break;
                     case R.id.about:
                         break;

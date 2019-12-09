@@ -11,7 +11,6 @@ import androidx.annotation.Nullable;
 
 public class SettingsFragment extends PreferenceFragment {
 
-    //    private static final String PREF_NAME = "pref_name";
     private static final String PREF_ACCOUNT = "pref_account";
     private static final String PREF_DEPT = "pref_dept";
     private SharedPreferences.OnSharedPreferenceChangeListener preferenceChangeListener;
@@ -24,10 +23,6 @@ public class SettingsFragment extends PreferenceFragment {
         preferenceChangeListener = new SharedPreferences.OnSharedPreferenceChangeListener() {
             @Override
             public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-//                if (key.equals(PREF_NAME)) {
-//                    Preference namePref = findPreference(key);
-//                    namePref.setSummary(sharedPreferences.getString(key, ""));
-//                }
                 if (key.equals(PREF_ACCOUNT)) {
                     Preference accountPref = findPreference(key);
                     accountPref.setSummary(sharedPreferences.getString(key, ""));

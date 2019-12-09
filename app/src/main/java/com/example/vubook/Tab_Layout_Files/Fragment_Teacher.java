@@ -1,7 +1,9 @@
 package com.example.vubook.Tab_Layout_Files;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,6 +35,8 @@ public class Fragment_Teacher extends Fragment {
 
     private TeacherAdapter adapter;
 
+    private String dept;
+
     public static final String EXTRA_IMAGE_URL = "com.example.firebaseprofile.EXTRA_IMAGE_URL";
     public static final String EXTRA_NAME = "com.example.firebaseprofile.EXTRA_NAME";
     public static final String EXTRA_EMAIL = "com.example.firebaseprofile.EXTRA_EMAIL";
@@ -42,6 +46,9 @@ public class Fragment_Teacher extends Fragment {
     public static final String EXTRA_COUNSELING_HOUR = "com.example.firebaseprofile.EXTRA_COUNSELING_HOUR";
     public static final String EXTRA_CONTACT = "com.example.firebaseprofile.EXTRA_CONTACT";
 
+    private static final String PREF_ACCOUNT_TYPE = "pref_account";
+    private static final String PREF_DEPARTMENT = "pref_dept";
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -49,7 +56,10 @@ public class Fragment_Teacher extends Fragment {
 
         recyclerView = view.findViewById(R.id.recyclerview);
 
-        Query query = teacher.orderBy("name", Query.Direction.ASCENDING);
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        dept = sharedPreferences.getString(PREF_DEPARTMENT, "");
+
+        Query query = teacher.whereEqualTo("department",dept).orderBy("name", Query.Direction.ASCENDING);
         FirestoreRecyclerOptions<Teacher> options = new FirestoreRecyclerOptions.Builder<Teacher>()
                 .setQuery(query, Teacher.class)
                 .build();
